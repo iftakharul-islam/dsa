@@ -1,7 +1,6 @@
 <?php
 
-$sample_input = 1000 ;
-echo sum($sample_input);
+
 
 function sum(int | string $user_input)
 {
@@ -22,3 +21,6 @@ function sum(int | string $user_input)
     }
     return $sum;
 }
+
+echo sum("5454dfdsf45d4s");
+echo sum("1000");
