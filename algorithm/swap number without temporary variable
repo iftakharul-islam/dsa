@@ -1,0 +1,11 @@
+<?php
+
+ $a = 5;
+ $b = 3;
+
+// Swap using arithmetic operations
+ $a = $a + $b; // a becomes 8
+ $b = $a - $b; // b becomes 5
+ $a = $a - $b; // a becomes 3
+
+ echo "After swapping: a = " . $a . ", b = " . $b;
