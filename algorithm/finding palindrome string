@@ -1,0 +1,17 @@
+<?php
+$str = "mamam";
+$isPalindrome = true;
+
+for ($i = 0, $j = strlen($str) - 1; $i < $j; $i++, $j--) {
+    if ($str[$i] != $str[$j]) {
+        $isPalindrome = false;
+        break;
+    }
+}
+
+if ($isPalindrome) {
+    echo $str . " is a palindrome.";
+} else {
+    echo $str . " is not a palindrome.";
+}
+
