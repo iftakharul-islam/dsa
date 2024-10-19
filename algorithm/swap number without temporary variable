@@ -1,5 +1,5 @@
 <?php
-
+// subtracting approach
  $a = 5;
  $b = 3;
 
@@ -8,4 +8,24 @@
  $b = $a - $b; // b becomes 5
  $a = $a - $b; // a becomes 3
 
- echo "After swapping: a = " . $a . ", b = " . $b;
+echo "After swapping: a = " . $a . ", b = " . $b;
+echo PHP_EOL;
+
+// bitwise approach
+$a = 5;
+$b = 3;
+
+$a = $a ^ $b; // a becomes 6 (binary: 101 ^ 011 = 110)
+$b = $a ^ $b; // b becomes 5 (binary: 110 ^ 011 = 101)
+$a = $a ^ $b; // a becomes 3 (binary: 110 ^ 101 = 011)
+
+echo "After swapping: a = " . $a . ", b = " . $b;
+
+
+// help of array 
+$a = 5;
+$b = 3;
+
+[$a, $b] = [$b, $a]; // Swap $a and $b using array destructuring
+
+echo "After swapping: a = " . $a . ", b = " . $b;
