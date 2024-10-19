@@ -1,0 +1,13 @@
+<?php
+
+$base = 2;
+$exponent = 3;
+$result = 1;
+
+for ($i = 0; $i < $exponent; $i++) {
+    $result *= $base;
+}
+
+echo $base . " raised to the power of " . $exponent . " is: " . $result;
+
+
