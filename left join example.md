@@ -55,3 +55,19 @@ foreach ($leftJoinResult as $row) {
     echo "Transaction ID: " . ($row['transaction_id'] !== null ? $row['transaction_id'] : 'NULL') . ", ";
     echo "Amount: " . ($row['amount'] !== null ? $row['amount'] : 'NULL') . "\n";
 }
+
+
+/*
+Output:
+
+Left Join Result:
+Visit ID: 1, Customer ID: 23, Transaction ID: 12, Amount: 910
+Visit ID: 2, Customer ID: 9, Transaction ID: 13, Amount: 970
+Visit ID: 4, Customer ID: 30, Transaction ID: NULL, Amount: NULL
+Visit ID: 5, Customer ID: 54, Transaction ID: 2, Amount: 310
+Visit ID: 5, Customer ID: 54, Transaction ID: 3, Amount: 300
+Visit ID: 5, Customer ID: 54, Transaction ID: 9, Amount: 200
+Visit ID: 6, Customer ID: 96, Transaction ID: NULL, Amount: NULL
+Visit ID: 7, Customer ID: 54, Transaction ID: NULL, Amount: NULL
+Visit ID: 8, Customer ID: 54, Transaction ID: NULL, Amount: NULL
+*/
